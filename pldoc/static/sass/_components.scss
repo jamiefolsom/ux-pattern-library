@@ -269,15 +269,23 @@
 // ------------------------------
 // #FOOTER
 // ------------------------------
-.pldoc-footer-site {
-    margin: spacing-vertical(base) spacing-horizontal(base);
+.footer-app {
+    border-top: rem(4) solid palette(grayscale-cool, x-light);
+    padding-top: spacing-vertical(base);
 }
 
-.pldoc-footer-site-copyright {
+.footer-app-copyright {
 
-    .pldoc-copy {
-        font-size: font-size(small);
-        color: palette(grayscale, base);
+    .copy {
+        @extend %copy-micro;
+    }
+}
+
+.footer-app-nav {
+
+    .list {
+        @extend %reset-lists;
+        @extend %copy-meta;
     }
 }
 

@@ -121,6 +121,47 @@
     @include container();
 }
 
+.footer-app-copyright {
+
+    @include susy-breakpoint($bp-screen-md, $susy-default) {
+        @include span(6 of 12 first);
+    }
+
+    @include susy-breakpoint($bp-screen-lg, $susy-default) {
+        @include span(4 of 12 first);
+    }
+}
+
+.footer-app-nav {
+    margin-bottom: spacing-vertical(base);
+
+    @include susy-breakpoint($bp-screen-md, $susy-default) {
+        @include span(6 of 12 last);
+        margin-bottom: 0;
+        @include text-align(right);
+    }
+
+    @include susy-breakpoint($bp-screen-lg, $susy-default) {
+        @include span(8 of 12 last);
+    }
+
+    .nav-item {
+        display: block;
+        margin-bottom: spacing-vertical(x-small);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include susy-breakpoint($bp-screen-md, $susy-default) {
+            display: inline-block;
+            vertical-align: middle;
+            @include margin-right(spacing-horizontal(small));
+            margin-bottom: 0;
+        }
+    }
+}
+
 // ------------------------------
 // #GENERAL CANVAS LAYOUT
 // ------------------------------
