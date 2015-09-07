@@ -1,16 +1,19 @@
-<header class="pldoc-header-site" role="banner" aria-labelledby="pldoc-header-site-title">
-    {% if page.title == "Home" %}
-    <h1 class="pldoc-header-site-title" id="pldoc-header-site-title">
-        <a class="pldoc-link title-name" href="{{ site.baseurl }}">
-            {{ site.title }}
+<div class="wrapper-header-app">
+    <header class="header-app" role="banner" aria-labelledby="pldoc-header-title">
+        <a id="btn-stage-left" class="btn-stage-left btn btn-secondary btn-base" href="#pldoc-nav-elements">
+            <svg class="icon icon-bars"><use xlink:href="public/icons/edx-svg/svgdefs.svg#icon-bars"></use></svg>
+            <span class="icon-text sr-only">Main menu</span>
         </a>
-    </h1>
-    {% else %}
-    <h2 class="pldoc-header-site-title">
-        <a class="pldoc-link title-name" href="{{ site.baseurl }}">
-            {{ site.title }}
-        </a>
-    </h2>
-    {% endif %}
-    <span class="pldoc-title-description copy copy-base">{{ site.tagline }}</span>
-</header>
+
+        <h1 class="header-app-title" id="header-app-title">
+            {% if page.title == "Home" %}
+            <a class="logo has-link" href="http://www.edx.org">
+            {% else %}
+            <a class="logo has-link" href="{{ site.baseurl }}">
+            {% endif %}
+                <img class="logo-img" src="/public/pldoc/images/logo-edx.svg" alt="edX" />
+                <span class="logo-app-name">{{ site.title_short }}</span>
+            </a>
+        </h1>
+    </header>
+</div>

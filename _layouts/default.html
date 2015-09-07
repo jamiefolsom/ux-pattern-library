@@ -10,19 +10,24 @@
 
     <hr class="pldoc-divider sr-only">
 
-    <div class="pldoc-wrapper-view">
-        <div class="pldoc-wrapper-content" id="content-top" tabindex="-1">
-            <div class="pldoc-wrapper-content-supplemental">
-                {% include sidebar.html %}
+    <div class="pldoc-wrapper-view" id="view-top">
+        <div class="stage-left">
+            {% include navigation.html %}
+        </div>
+
+        <div class="stage">
+            {% include header.html %}
+
+            <div class="pldoc-wrapper-content" id="content-top" tabindex="-1">
+
+                <div class="pldoc-wrapper-content-main">
+                    <main class="pldoc-content pldoc-content-main" id="content-main" aria-label="Content">
+                        {{ content }}
+                    </main>
+                </div>
             </div>
 
-            <hr class="pldoc-divider sr-only">
-
-            <div class="pldoc-wrapper-content-main">
-                <main class="pldoc-content pldoc-content-main" id="content-main" aria-label="Content">
-                    {{ content }}
-                </main>
-            </div>
+            {% include footer.html %}
         </div>
     </div>
 

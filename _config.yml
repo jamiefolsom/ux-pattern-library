@@ -1,9 +1,10 @@
 # Meta
 title:                      edX Pattern Library
+title_short:                Pattern Library
 tagline:                    The Visual, UI, and Front End styleguide for edX's applications
 url:                        http://code.edx.org/ux-pattern-library
 author:
-    name:                   edX UX
+    name:                   edX UX Team
     url:                    http://www.edx.org
     email:                  ux@edx.org
 

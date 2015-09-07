@@ -6,52 +6,47 @@
 // ------------------------------
 // #DOC SITE LAYOUT
 // ------------------------------
-// main content
-.pldoc-wrapper-content-main {
+// header
+.wrapper-header-app {
+    padding: spacing-vertical(small) spacing-horizontal(base);
 
-    @include susy-breakpoint($bp-screen-lg, $susy-default) {
-        width: calc(100% - $pldoc-content-supplemental-width);
-        margin-left: $pldoc-content-supplemental-width;
+    @include susy-breakpoint($bp-screen-md, $susy-default) {
+        padding: spacing-vertical(small) spacing-horizontal(large);
     }
 }
 
-// sidebar
-.pldoc-wrapper-content-supplemental {
+.header-app {
+    @include container();
 
-    @include susy-breakpoint($bp-screen-lg, $susy-default) {
-        @include size($pldoc-content-supplemental-width 100%);
-        display: block;
-        position: fixed;
-        top: 0;
-        @include left(0);
-        overflow-y: scroll;
+    .logo,
+    .logo-img,
+    .logo-app-name {
+        display: inline-block;
+        vertical-align: middle;
     }
 
-    .pldoc-header-site {
-        padding: spacing-vertical(mid-small) spacing-horizontal(mid-large);
-
-        @include susy-breakpoint($bp-screen-lg, $susy-default) {
-            margin: spacing-vertical(base) spacing-horizontal(mid-large);
-            padding: 0;
-        }
+    .logo-img {
+        width: rem(70);
+        @include margin-right(spacing-horizontal(small));
     }
 
-
-    .pldoc-nav {
-        display: none;
-
-        @include susy-breakpoint($bp-screen-lg, $susy-default) {
-            display: block;
-        }
+    // CASE: has off-canvas navigation
+    .btn-stage-left {
+        display: inline-block;
+        vertical-align: middle;
+        width: span(1);
+        @include margin-right(gutter());
     }
+}
 
-    .pldoc-footer-site {
-        display: none;
+.header-app-title {
+    display: inline-block;
+    vertical-align: middle;
+}
 
-        @include susy-breakpoint($bp-screen-lg, $susy-default) {
-            display: block;
-        }
-    }
+// main content
+.pldoc-wrapper-content-main {
+
 }
 
 // element
@@ -111,6 +106,19 @@
             margin-bottom: 0;
         }
     }
+}
+
+// footer
+.wrapper-footer-app {
+    padding: spacing-vertical(small) spacing-horizontal(base);
+
+    @include susy-breakpoint($bp-screen-md, $susy-default) {
+        padding: spacing-vertical(small) spacing-horizontal(large);
+    }
+}
+
+.footer-app {
+    @include container();
 }
 
 // ------------------------------
