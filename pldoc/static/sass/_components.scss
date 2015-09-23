@@ -21,7 +21,7 @@
 
     .button-overlay-demo {
         padding: spacing-vertical(mid-large) spacing-horizontal(mid-large);
-        background: palette(primary, accent) url('#{$image-path}/bg-overlay-example.png') 0 50% no-repeat;
+        background: palette(primary, accent) url('#{$image-path}/placeholder-bg-overlay-example.png') 0 50% no-repeat;
         background-size: cover;
     }
 }
