@@ -155,14 +155,14 @@
 
 
 // align text
-%text-align-left {
+%text-left {
     @include text-align(left);
 }
 
-%text-align-center {
+%text-center {
     @include text-align(center);
 }
 
-%text-align-right {
+%text-right {
     @include text-align(right);
 }

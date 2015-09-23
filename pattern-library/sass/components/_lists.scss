@@ -109,15 +109,15 @@ $list-decoration-margin: spacing-horizontal(small);
 
 
     &.align-right {
-        @extend %text-align-right;
+        @extend %text-right;
     }
 
     &.align-left {
-        @extend %text-align-left;
+        @extend %text-left;
     }
 
     &.align-center {
-        @extend %text-align-center;
+        @extend %text-center;
     }
 }
 
