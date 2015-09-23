@@ -152,3 +152,17 @@
         color: palette(primary, dark);
     }
 }
+
+
+// align text
+%text-align-left {
+    @include text-align(left);
+}
+
+%text-align-center {
+    @include text-align(center);
+}
+
+%text-align-right {
+    @include text-align(right);
+}

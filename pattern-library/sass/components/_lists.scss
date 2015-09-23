@@ -104,7 +104,21 @@ $list-decoration-margin: spacing-horizontal(small);
 // ----------------------------
 // #ALIGNMENT
 // ----------------------------
+.list .item {
 
+
+    &.align-right {
+        @extend %text-align-right;
+    }
+
+    &.align-left {
+        @extend %text-align-left;
+    }
+
+    &.align-center {
+        @extend %text-align-center;
+    }
+}
 
 
 // ----------------------------
