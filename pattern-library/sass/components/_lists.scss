@@ -8,6 +8,7 @@
 // #UTILITY
 // #BASE
 // #ALIGNMENT
+// #DIVIDED
 // #SIZES
 // #BULLETED
 // #INLINE
@@ -48,11 +49,23 @@ $list-decoration-margin: spacing-horizontal(small);
     @extend %list;
 }
 
+// CASE: list with complex content
+.list {
+
+    .item-content {
+        display: table-cell;
+        @include padding-left(spacing-horizontal(small));
+        vertical-align: top;
+    }
+}
+
 // CASE: with icons
 .list {
 
     .item-icon {
-
+        @include size(20px);
+        background: red;
+        display: inline-block;
     }
 
     .item-content {
@@ -64,7 +77,9 @@ $list-decoration-margin: spacing-horizontal(small);
 .list {
 
     .item-img {
-
+        @include size(20px);
+        background: red;
+        display: inline-block;
     }
 
     .item-content {
@@ -90,6 +105,20 @@ $list-decoration-margin: spacing-horizontal(small);
 // #ALIGNMENT
 // ----------------------------
 
+
+
+// ----------------------------
+// #DIVIDED
+// ----------------------------
+.list-divided {
+
+    .item {
+        padding-bottom: spacing-vertical(x-small);
+        border-bottom: rem(1) solid palette(grayscale-cool, x-light);
+        margin-bottom: spacing-vertical(x-small);
+        @extend %clear-last-child;
+    }
+}
 
 
 // ----------------------------
