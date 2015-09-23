@@ -28,7 +28,8 @@ $list-decoration-margin: spacing-horizontal(small);
 // ----------------------------
 %list {
     @extend %list-unstyled;
-    margin-bottom: spacing-vertical(base);
+    margin-bottom: spacing-vertical(mid-small);
+    @extend %clear-last-child;
 
     .item {
         display: list-item;
