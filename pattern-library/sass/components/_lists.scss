@@ -7,6 +7,7 @@
 // #CONFIG
 // #UTILITY
 // #BASE
+// #ALIGNMENT
 // #SIZES
 // #BULLETED
 // #INLINE
@@ -22,61 +23,213 @@
 // ----------------------------
 // #UTILITY
 // ----------------------------
+%list {
+    @extend %list-unstyled;
+    margin-bottom: spacing-vertical(base);
+
+    .item {
+        display: list-item;
+        table-layout: fixed;
+        margin-bottom: spacing-vertical(xx-small);
+        list-style-position: outside;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
 
 // ----------------------------
 // #BASE
 // ----------------------------
+.list {
+    @extend %list;
+}
+
 // CASE: with icons
+.list {
+
+    .item-icon {
+
+    }
+
+    .item-content {
+
+    }
+}
 
 // CASE: with images
+.list {
+
+    .item-img {
+
+    }
+
+    .item-content {
+
+    }
+}
 
 // CASE: with complex content
+.list {
 
-// header
+    // heading
+    .item-hd {
+        margin-bottom: spacing-vertical(base);
+    }
 
-// copy
+    // copy
+    .item-copy {
+
+    }
+}
+
+// ----------------------------
+// #ALIGNMENT
+// ----------------------------
+
+
 
 // ----------------------------
 // #SIZES
 // ----------------------------
-// xs
-
 // sm
+.list-sm {
 
-// md
+    .icon {
+
+    }
+
+    .img {
+
+    }
+
+    .item {
+
+    }
+
+    .item-hd {
+
+    }
+
+    .item-copy {
+
+    }
+}
+
+// md (base)
+.list-base {
+
+    .icon {
+
+    }
+
+    .img {
+
+    }
+
+
+    .item {
+
+    }
+
+    .item-hd {
+
+    }
+
+    .item-copy {
+
+    }
+}
 
 // lg
+.list-lg {
 
-// xl
+    .icon {
+
+    }
+
+    .img {
+
+    }
+
+    .item {
+
+    }
+
+    .item-hd {
+
+    }
+
+    .item-copy {
+
+    }
+}
 
 
 // ----------------------------
 // #BULLETED
 // ----------------------------
+.list-bulleted {
+    @extend %list;
 
+    .item {
+
+    }
+}
 
 
 // ----------------------------
 // #ORDERED
 // ----------------------------
+.list-ordered {
+    @extend %list;
 
+    .item {
+
+    }
+}
 
 
 // ----------------------------
 // #INLINE
 // ----------------------------
+.list-inline {
+    @extend %list;
 
+    .item {
+        display: inline-block;
+        @include margin-right(spacing-vertical(x-small));
 
+        &:last-child {
+            @include margin-right(0);
+        }
+    }
+}
 
 // ----------------------------
 // #LINK LIST
 // ----------------------------
+.list-links {
+    @extend %list;
 
+    .item {
+
+    }
+}
 
 
 // ----------------------------
 // #GROUPED
 // ----------------------------
+.list-group {
+    @extend %list;
+
+    .item {
+
+    }
+}
+
 // divided
 
 // celled
