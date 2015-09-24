@@ -5,6 +5,11 @@ Nothing yet
 
 - - -
 
+## 0.2.7 (2015-09-22)
+* Added a new element, Lists - for use in content and simple navigation
+
+- - -
+
 ## 0.2.6 (2015-09-04)
 * Moved SVG-based icons to icons directory rather than images
 
