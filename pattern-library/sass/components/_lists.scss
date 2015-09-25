@@ -20,7 +20,11 @@
 // ----------------------------
 // #CONFIG
 // ----------------------------
-$list-decoration-margin: spacing-horizontal(small);
+$list-decoration-margin: spacing-horizontal(base);
+
+$list-disc-ornament: disc;
+$list-circle-ornament: circle;
+$list-default-ornament: $list-disc-ornament;
 
 
 // ----------------------------
@@ -35,7 +39,6 @@ $list-decoration-margin: spacing-horizontal(small);
         display: list-item;
         table-layout: fixed;
         margin-bottom: spacing-vertical(xx-small);
-        list-style-position: outside;
 
         &:last-child {
             margin-bottom: 0;
@@ -275,9 +278,22 @@ $list-decoration-margin: spacing-horizontal(small);
 // ----------------------------
 .list-bulleted {
     @extend %list;
+    @include margin-left($list-decoration-margin);
+    list-style-position: outside;
+    list-style-type: $list-default-ornament;
 
     .item {
 
+    }
+
+    // CASE: disc
+    &.list-disc {
+        list-style-type: $list-disc-ornament;
+    }
+
+    // CASE: circle
+    &.list-circle {
+        list-style-type: $list-circle-ornament;
     }
 }
 
@@ -287,6 +303,8 @@ $list-decoration-margin: spacing-horizontal(small);
 // ----------------------------
 .list-ordered {
     @extend %list;
+    @include margin-left($list-decoration-margin);
+    list-style-position: outside;
 
     .item {
 
