@@ -64,9 +64,14 @@ $list-decoration-margin: spacing-horizontal(small);
 .list {
 
     .item-icon {
-        @include size(rem(50));
+        width: spacing-horizontal(base);
         background: red;
         display: inline-block;
+
+        .icon {
+            width: 100%;
+            height: auto;
+        }
     }
 
     .item-content {
@@ -78,7 +83,7 @@ $list-decoration-margin: spacing-horizontal(small);
 .list {
 
     .item-img {
-        @include size(rem(50));
+        width: spacing-horizontal(base);
         background: red;
         display: inline-block;
     }
