@@ -508,53 +508,53 @@ $btn-overlay-disabled-focus-border-color:   palette(grayscale, trans) !default;
 $btn-overlay-disabled-focus-background:     $transparent !default;
 
 // forms
-$label-color:                           $text-base-color !default;
-$label-color-active:                    palette(grayscale, x-dark) !default;
+$label-color:                               $text-base-color !default;
+$label-color-active:                        palette(grayscale, x-dark) !default;
 
-$input-placeholder-text:                palette(grayscale-cool, light) !default;
+$input-placeholder-text:                    palette(grayscale-cool, light) !default;
 
-$input-background-default:              palette(grayscale, white) !default;
-$input-background-default-focus:        $input-background-default !default;
-$input-check-radio-background-default:  palette(grayscale-cool, x-light) !default;
-$input-check-radio-background-checked:  palette(primary, base) !default;
-$input-border-default:                  palette(grayscale, x-light) !default;
-$input-border-default-focus:            palette(primary, accent) !default;
-$input-control-color:                   palette(primary, base) !default;
-$input-text-default:                    palette(grayscale-cool, x-dark) !default;
-$input-text-default-hover:              palette(grayscale-cool, x-dark) !default;
+$input-default-background:                  palette(grayscale, white) !default;
+$input-default-background-focus:            $input-default-background !default;
+$input-check-radio-background:              palette(grayscale-cool, x-light) !default;
+$input-check-radio-checked-background:      palette(primary, base) !default;
+$input-default-border-color:                palette(grayscale, x-light) !default;
+$input-default-focus-border-color:          palette(primary, accent) !default;
+$input-default-color:                       palette(grayscale-cool, x-dark) !default;
+$input-default-focus-color:                 palette(grayscale-cool, x-dark) !default;
+$input-control-color:                       palette(primary, base) !default;
 
-$input-background-disabled:             palette(grayscale-cool, x-light) !default;
-$input-border-disabled:                 palette(grayscale-cool, light) !default;
-$input-text-disabled:                   palette(grayscale-cool, light) !default;
+$input-disabled-background:                 palette(grayscale-cool, x-light) !default;
+$input-disabled-border-color:               palette(grayscale-cool, light) !default;
+$input-disabled-text:                       palette(grayscale-cool, light) !default;
 
-$input-alt-background:                  $transparent !default;
-$input-alt-border-focus:                palette(grayscale, x-dark) !default;
+$input-alt-background:                      $transparent !default;
+$input-alt-focus-border-color:              palette(grayscale, x-dark) !default;
 
-$input-slider-track-default:            palette(grayscale, x-light) !default;
-$input-slider-border-default:           $input-slider-track-default !default;
-$input-slider-border-default-radius:    $btn-border-radius !default;
-$input-slider-handle-default:           palette(primary, light) !default;
-$input-slider-handle-default-hover:     palette(primary, base) !default;
-$input-slider-default-focus:            palette(primary, accent) !default;
-$input-slider-default-hover:            palette(primary, x-accent) !default;
-$input-slider-track-disabled:           palette(grayscale, x-light) !default;
-$input-slider-disabled-border:          $input-slider-track-disabled !default;
-$input-slider-handle-disabled:          palette(grayscale, base) !default;
-$input-slider-disabled-focus:           palette(grayscale, light) !default;
+$input-slider-track:                        palette(grayscale, x-light) !default;
+$input-slider-border:                       $input-slider-track !default;
+$input-slider-border-radius:                $component-border-radius !default;
+$input-slider-handle:                       palette(primary, light) !default;
+$input-slider-handle-focus:                 palette(primary, base) !default;
+$input-slider-focus:                        palette(primary, accent) !default;
+$input-slider-hover:                        palette(primary, x-accent) !default;
+$input-slider-disabled-track:               palette(grayscale, x-light) !default;
+$input-slider-disabled-border:              $input-slider-disabled-track !default;
+$input-slider-disabled-handle:              palette(grayscale, base) !default;
+$input-slider-disabled-focus:               palette(grayscale, light) !default;
 
-$input-progress-track:                  palette(grayscale, x-light) !default;
-$input-progress-border:                 $input-progress-track !default;
-$input-progress-border-radius:          $btn-border-radius !default;
-$input-progress-track-done:             palette(primary, accent) !default;
+$input-progress-track:                      palette(grayscale, x-light) !default;
+$input-progress-border:                     $input-progress-track !default;
+$input-progress-border-radius:              $component-border-radius !default;
+$input-progress-completed-track:            palette(primary, accent) !default;
 
-$field-tip-color:                       palette(grayscale-cool, dark) !default;
-$field-required-indicator-color:        $label-color !default;
+$field-tip-color:                           palette(grayscale-cool, dark) !default;
+$field-required-color:                      $label-color !default;
 
 // tables
-$table-cell-padding:                    spacing-vertical(small) spacing-horizontal(small) !default;
-$table-condensed-cell-padding:          spacing-vertical(x-small) spacing-horizontal(x-small) !default;
-$table-bg:                              palette(grayscale, white) !default;
-$table-accent-bg:                       palette(primary, accent) !default;
-$table-focus-bg:                        $component-focus-bg !default;
-$table-active-bg:                       $component-active-bg !default;
-$table-border-color:                    palette(grayscale, x-light) !default;
+$table-cell-padding:                        spacing-vertical(small) spacing-horizontal(small) !default;
+$table-condensed-cell-padding:              spacing-vertical(x-small) spacing-horizontal(x-small) !default;
+$table-bg:                                  palette(grayscale, white) !default;
+$table-accent-bg:                           palette(primary, accent) !default;
+$table-focus-bg:                            $component-focus-bg !default;
+$table-active-bg:                           $component-active-bg !default;
+$table-border-color:                        palette(grayscale, x-light) !default;
