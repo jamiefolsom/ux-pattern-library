@@ -5,6 +5,11 @@ Nothing yet
 
 - - -
 
+## 0.3.0 (2015-10-01)
+* Cleaned up variables: abstraction, scope, and simplification
+
+- - -
+
 ## 0.2.6 (2015-09-04)
 * Moved SVG-based icons to icons directory rather than images
 
