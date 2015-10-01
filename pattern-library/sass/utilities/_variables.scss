@@ -363,6 +363,7 @@ $component-focus-color:                     inherit !default;
 $component-focus-bg:                        palette(primary, x-light) !default;
 $component-active-color:                    palette(grayscale, white) !default;
 $component-active-bg:                       palette(primary, base) !default;
+$component-border-radius:                   3px !default;
 
 // base text settings
 $text-base-font-family:                     $font-family-sans-serif !default;
@@ -404,6 +405,7 @@ $btn-border-style:                          solid !default;
 $btn-border-size:                           1px !default;
 $btn-shadow:                                3px !default;
 $btn-font-weight:                           font-weight(semi-bold) !default;
+$btn-border-radius:                         $component-border-radius !default;
 
 // default button
 $btn-default-border-color:                  palette(primary, base) !default;
