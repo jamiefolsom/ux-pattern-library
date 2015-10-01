@@ -92,8 +92,8 @@
 
 .field-message {
     font-size: font-size(small);
-    border-bottom-left-radius: $buttons-border-radius;
-    border-bottom-right-radius: $buttons-border-radius;
+    border-bottom-left-radius: $btn-border-radius;
+    border-bottom-right-radius: $btn-border-radius;
 
     &.has-error {
         padding: spacing-vertical(x-small);
